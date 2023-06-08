@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Title Page-->
+    <title>Registration Form</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Registration Form <span>
+                            <h4>(Service-Providers)</h4>
+                        </span></h2>
+                    <form method="POST" action="javascript:void(0)">
+                        <div class="row row-space">
+
+                            <div class="input-group">
+                                <label class="label">
+                                    <font color="black"><b>Select The Services(1)</b>
+                                </label>
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select name="location" id="serve_1" REQUIRED>
+                                        <option value=""><b>-------Select-------</b></option>
+                                        <!-- <option value="">Home Appliances Services</option>
+                                        <option value="">Electrician Services</option>
+
+                                        <option value="">Computer Services</option>
+
+                                        <option value="">Mobile Services</option>
+
+                                        <option value="">Photographers</option>
+
+                                        <option value="">Plumbers</option>
+
+                                        <option value="">Painters</option>
+
+                                        <option value="">Carpenters</option>
+                                        <option value="">Beautician</option>
+                                        <option value="">Groceries</option>
+
+                                        <option value="">Select Services</option> -->
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+
+                                <div class="input-group">
+                                    <label class="label">
+                                        <font color="black"><b>Select The Services(2)(optional)</b>
+                                    </label>
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="location" id="serve_2">
+                                            <option value="">-------select-------</option>
+                                            <!-- <option value="">Home Appliances Services</option>
+                                            <option value="">Electrician Services</option>
+
+                                            <option value="">Computer Services</option>
+
+                                            <option value="">Mobile Services</option>
+
+                                            <option value="">Photographers</option>
+
+                                            <option value="">Plumbers</option>
+
+                                            <option value="">Painters</option>
+
+                                            <option value="">Carpenters</option>
+                                            <option value="">Beautician</option>
+                                            <option value="">Groceries</option>
+
+                                            <option value="">Select Services</option> -->
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+
+
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Name</label>
+                                            <input class="input--style-4" required type="text" id="name" name="name">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row row-space">
+                                        <div class="col-2">
+                                            <div class="input-group">
+                                                <label class="label">Email</label>
+                                                <input class="input--style-4" type="email" id="email" name="email" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row row-space">
+                                            <div class="col-2">
+                                                <div class="input-group">
+                                                    <label class="label">Present Address</label>
+                                                    <input class="input--style-4" type="prese" id="present_address" name="prese" required height="25px;">
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="row row-space">
+                                                <div class="col-2">
+                                                    <div class="input-group">
+                                                        <label class="label">Permanent Address</label>
+                                                        <input class="input--style-4" type="perma" id="permanent_address" name="perma" required>
+                                                        <span>
+                                                            <h5>
+                                                                <font color="green">**If Permanent Address Is Same As Present Address Leave this section Empty
+                                                            </h5>
+                                                        </span></font>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="input-group">
+                                            <label class="label">
+                                                <font color="black"><b>Service Area/Location</b>
+                                            </label>
+                                            <div class="rs-select2 js-select-simple select--no-search">
+                                                <select name="location" id="district">
+                                                    <option value="">-----select-----</option>
+                                                </select>
+                                                <div class="select-dropdown"></div>
+                                            </div>
+                                            <div class="p-t-15">
+
+                                                <div class="input-group">
+                                                    <label class="label">
+                                                        <font color="black"><b>Taluk</b>
+                                                    </label>
+                                                    <div class="rs-select2 js-select-simple select--no-search">
+                                                        <select name="location" id="taluk" class="form-control">
+                                                            <option value="">-----select-----</option>
+                                                        </select>
+                                                        <div class="select-dropdown"></div>
+                                                    </div>
+                                                    <div class="p-t-15">
+                                                        <button class="btn btn--radius-2 btn--blue" id="submit" type="submit">Submit</button><a href="kycform.html">next</a>
+                                                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+<!-- <script src="./js/app.js"></script> -->  
+<script type="text/javascript">
+    $(document).ready(() => {
+        $.ajax({
+            url:"./includes/service_kyc.inc.php",
+            method:"POST",
+            data:"serve_id=yes",
+            success:(result)=>{
+                // console.log(result);
+                if (result=="error") {
+                    alert("You need login first...");
+                    window.location.href="../welcome/mobile_sp.html";
+                }
+            }
+        });
+        $.ajax({
+            url: './includes/get_city_taluk.php',
+            method: 'POST',
+            data: 'serve=yes',
+            success: (result) => {
+                $("#serve_1").html(result);
+                $("#serve_2").html(result);
+            }
+        });
+        $.ajax({
+            url: './includes/get_city_taluk.php',
+            method: 'POST',
+            data: 'city=yes',
+            success: (result) => {
+                $("#district").html(result);
+            }
+        });
+    });
+    $("#district").change(() => {
+        let district_id = $("#district").val();
+        $.ajax({
+            url: './includes/get_city_taluk.php',
+            method: 'POST',
+            data: 'taluk=yes&district_id=' + district_id,
+            success: (result) => {
+                $("#taluk").html(result);
+            }
+        });
+    });
+    $("#submit").click((e) => {
+        e.preventDefault();
+        var serve_1=$("#serve_1").val();
+        var serve_2=$("#serve_2").val();
+        var email = $("#email").val();
+        var name = $("#name").val();
+        var present_address = $("#present_address").val();
+        var permanent_address = $("#permanent_address").val();
+        var district_id = $("#district").val();
+        var taluk_id = $("#taluk").val();
+        if (serve_1 == "" ||email == "" || name == "" || present_address == "" || permanent_address == "" || district_id == "" || taluk_id == "") {
+            alert("Fill all the details");
+        } else if (serve_1==serve_2) {
+            alert("select the different service of the optional");
+        } else {
+            $.ajax({
+                url: './includes/service_add.inc.php',
+                method: 'POST',
+                data: 'email=' + email +'&serve_1='+serve_1+'&serve_2='+serve_2+ '&name=' + name + '&present_address=' + present_address + '&permanent_address=' + permanent_address + '&district_id=' + district_id + '&taluk_id=' + taluk_id,
+                success: (result) => {
+                    // console.log(result);
+                    // return;
+                    if (result == "success") {
+                        alert("Registration success..!!");
+                        window.location.href = "./kycform.html";
+                    } else if (result == "error") {
+                        alert("Error registration process try after sometime");
+                    } else {
+                        alert("Something went wrong :(");
+                    }
+                }
+            });
+        }
+    });
+</script>
+
+</html>
+<!-- end document-->

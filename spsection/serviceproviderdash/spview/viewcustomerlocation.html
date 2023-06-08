@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>notification</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom fonts for this template-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+  
+
+	<link type="text/css" rel="stylesheet" href="./asset/dashboard/css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	
+<link rel="stylesheet" href="css/style.css">
+
+<link href="./vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+<link href="./css/sb-admin-2.css" rel="stylesheet">
+
+<link href="./css/sb-admin-2.min.css" rel="stylesheet">
+
+	
+	<div id="fh5co-offcanvas">
+		<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+		<a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas"><span><i class="icon-cross3"></i> <span><i class=" fa fa-times"></i></span></span></a>
+		<!-- Page Wrapper -->
+		<div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">SP Admin <sup>2</sup></div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+     <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="spdashboard.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mydailywork.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>My Daily Services</span></a>
+      </li>
+	    <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-wrench"></i>
+          <span>My Service Updates</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Utilities:</h6>
+            <a class="collapse-item" href="contactusforsp.html">Update Service Request Amount</a>
+            <a class="collapse-item" href="contactusforsp.html">Report An Issue!</a>
+            <a class="collapse-item" href="utilities-animation.html"></a>
+            <a class="collapse-item" href="utilities-other.html">Other</a>
+          </div>
+        </div>
+      </li>
+	    <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="sptable.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>My Total Services</span></a>
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        My Profile
+      </div>
+
+     
+
+    
+ <!-- Nav Item - Pages Collapse Menu -->
+ <li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>My Documents</span>
+    </a>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Custom Components:</h6>
+        <a class="collapse-item" href="spkycdocumentsdisplay.html">View Your Submitted kyc Documents</a>
+        <a class="collapse-item" href="updatekycdoc.html">Update Kyc Documents</a>
+      </div>
+    </div>
+  </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+
+
+ <div class="sidebar-heading">
+        Customer-Details Section
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+     
+       <!-- Nav Item - Utilities Collapse Menu -->
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#viewcustomer" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-user"></i>
+          <span>View Customer-Details</span>
+        </a>
+        <div id="viewcustomer" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Choose</h6>
+            <a class="collapse-item" href="viewcustomer.html">Customer Details</a><br>
+
+            <a class="collapse-item" href="viewcustomerlocation.html">Customer Location</a><br>
+            <a class="collapse-item" href="utilities-animation.html"></a>
+          </div>
+        </div>
+      </li>
+	  <hr class="sidebar-divider">
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Addons
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+     
+       <!-- Nav Item - Utilities Collapse Menu -->
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#rateus" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-heart"></i>
+          <span>Support Us</span>
+        </a>
+        <div id="rateus" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Utilities:</h6>
+            <a class="collapse-item" href="utilities-color.html">Rate-Us</a><br>
+            <a class="collapse-item" href="utilities-border.html">Invite A Friend</a><br>
+            <a class="collapse-item" href="utilities-animation.html"></a>
+          </div>
+        </div>
+      </li>
+ <!-- Nav Item - Pages Collapse Menu -->
+    
+      
+    </ul>
+    <!-- End of Sidebar -->  
+	</div>
+	<!-- END #fh5co-offcanvas -->
+	<header id="fh5co-header">
+	
+	
+			<div class="row">
+				<a href="#" ><i></i></a>
+				
+					
+					
+				</div>
+	
+			</div>
+		
+		</div>
+	
+	</header>
+</head>
+
+<body>
+		<div class="row">
+			<div class="col-2 ml-4 mt-3">
+				LOGO
+			</div>
+			
+			
+		</div>
+		</a>
+	 <!-- Content Wrapper -->
+	 <div id="content-wrapper" class="d-flex flex-column">
+
+		<!-- Main Content -->
+		<div id="content">
+  
+		    <!-- Topbar -->
+		  <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+  
+			<!-- Sidebar Toggle (Topbar) -->
+			<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+			 <div class="js-fh5co-nav-toggle"> <i class="fa fa-bars" ></i></div>
+			</button>
+  <!-- Topbar Navbar -->
+		<ul class="navbar-nav ml-auto">
+
+         
+             
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a  href="spnotifications.html" >
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              
+            
+               
+              </div>
+            </li>
+
+          
+
+           
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+
+              <!-- Begin Page Content -->
+        <div class="container-fluid">
+  <!-            <!-- Nav Item - User Information -->
+           
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+            <tr class="row100">
+                Customer Number<td COLSPAN="2"><input type="text" class="form-control" value="9999999999" readonly></td>
+                Enter OTP<td COLSPAN="2"><input type="text" class="form-control" placeholder="OTP"></td>
+                <br>
+                
+                  </tr>
+        </thead>
+            
+            <section class="contact-page spad pt-0">
+                <div class="container">
+                    <div class="map-section">
+                        <div class="contact-info-warp">
+                            <div class="contact-info">
+                                <h4>Address</h4>
+                             <B> <p>  <FONT COLOR="WHITE"> GOVERNMENT SCIENCE COLLEGE(GSC)<FONT><BR>
+                            NRUPATUNGA ROAD,<BR>SAMPIGE RAM NAGARA,<BR>AMBEDKAR VEEDHI<BR>BENGALURU-560001,KARNATAKA</p></B>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Phone</h4>
+                                <p>9876543210</p>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Email</h4>
+                                <p>email@gmail.com</p>
+                            </div>
+                            
+                        </div>
+                        <!-- Google map -->
+                        <div class="map" id="map-canvas"></div>
+                    </div>
+                
+                        
+        <!-- load for map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
+            <script src="./js/map.js"></script>
+        
+        
+                    </div>
+                </div>
+            </section>
+            <div class="col-12 text-center my-4">
+                <a href="customermap.html" class="btn btn-primary font-weight-bold w-50">Lets-GO</a>
+            </div>
+
+        <!-- /.container-fluid -->
+              <!-- Content Row -->
+    
+
+          <!-- Content Row -->
+
+          <div class="row">
+
+            
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    
+  
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+
+
+
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="./asset/dashboard/js/app.js"></script>
+<script src="js/main.js"></script>
+  <!-- Bootstrap core JavaScript-->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+</html>
